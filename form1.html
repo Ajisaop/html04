@@ -1,78 +1,63 @@
 <html>
+<title>Registration Form</title>
 <head>
-<title>form</title></head>
 <style>
-td{
-color:red;
-}</style>
-<body align="center">
-<center>
-<form style="border:1px solid #000;background-color:orange;text-align:center;padding:30px;width:500px;border-radius:10px;height:700px;">
-<h1>Registation Form</h1>
-<table>
-<tr>
-<td><label>Name</label></td>
-<td><input type="text"></td>
-</tr>
-<tr>
-<td><label>Date of Birth</label></td>
-<td><input type="date"></td>
-</tr>
-<tr>
-<td><label>Age</label></td>
-<td><input type="number"></td>
-</tr>
-<tr>
-<td><label>Address</label></td>
-<td><textarea></textarea></td>
-</tr>
-<tr>
-<td><label>Email</label></td>
-<td><input type="email"></td>
-</tr>
-<tr>
-<td><input type="radio" name="radio">Male</td>
-<td><input type="radio" name="radio">Female</td>
-</tr>
-<tr>
-<td><label>Qualification:</label></td>
-<td><select>
-<option>BCA<option>
-<option>BSC<option>
-<option>MCA<option>
-<option>Btech<option>
-</select></td>
-</tr>
-<tr>
-<td><label>languages Known:</label></td>
-<td><label>English</label>
-<input type="checkbox">
-<label>Malayalam</label>
-<input type="checkbox">
-<label>Hindi</label>
-<input type="checkbox">
-<label>Tamil</label></td></tr>
 
+h1{
+color:white;}
+div{
+width:380px;
+text-align:center;
+margin-left:475px;
+margin-top:100px;
+}
+
+</style>
+<body align="center" >
+<div width=50%>
+</div>
+<div style="background-color:#b7e3f7" >
+<h1>REGISTRATION FORM</h1>
+<form>
+<table >
 <tr>
-<td><input type="file"></td>
+<td>
+<label>Name:</label></td>
+<td><input type="text">
 </tr>
-<tr>
-<td><label>Username</label></td>
-<td><input type="text"></td>
-</tr>
-<tr>
-<td><label>Password</label></td>
-<td><input type="password"></td>
-</tr>
-<tr>
-<td><input type="checkbox">
-I declare this information are correct.</td>
-</tr>
-<tr>
-<td><input type="submit">
-<input type="reset" value="clear"></td>
-</tr>
+<tr><td><label>DOB:</label></td>
+<td><input type="date"></td></tr>
+<tr><td><label>Age:</label></td>
+<td><input type="number"></td></tr>
+<tr><td><label>Address:</label></td>
+<td><textarea rows="5" cols="21"></textarea></td></tr>
+<tr><td><label>Email:</label></td>
+<td><input type="email" value="Email"></td></tr>
+<tr><td><label>Password:</label></td>
+<td><input type="password" maxlength="8"></td></tr>
+<tr><td><label>Gender:</label></td>
+<td><input type="radio" name="sex"value="male">Male
+<input type="radio"name="sex"value="female">Female
+<input type="radio"name="sex"value="other">Other</td></tr>
+<tr><td><label>Select image</label></td>
+<td><input type="file"></td></tr>
+<tr><td><label>Qualification:</label></td><td><select>
+<option>Select</optiopn>
+<option>BCA</optiopn>
+<option>MCA</optiopn>
+<option>BTECH</optiopn>
+</select></td></tr>
+<tr><td><label>Language:</label></td>
+<td><label>Malayalam</label>
+<input type="checkbox"><label>English</label>
+<input type="checkbox"><label>Hindi</label>
+<input type="checkbox"></td></tr>
 </table>
-</form></center>
+<input type="checkbox"><label>I hereby declare that all the information <br>are true for my knowledge</label><br><br>
+<input type="submit">
+<input type="reset" value="Clear">
+</form>
+</div>
+
 </body>
 </html>
