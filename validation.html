@@ -13,7 +13,7 @@ height:300px;}
 </head>
 <body align="center">
 <center>
-<form name="form1" onsubmit="validationform()">
+<form name="form1" onsubmit="returnvalidationform()">
 <h1>Validation Form</h1>
 <table>
 <tr>
@@ -45,14 +45,17 @@ var number=document.form1.number.value;
  if(name==null||name=="")
   {
    alert("Enter a valid name");
+   return false;
   }
  if(password.length<8)
   {
    alert("Enter a strong password");
+   return false;
   }
   if(password.length<10)
   {
    alert("Enter a valid number");
+   return false;
   }
   
  }
